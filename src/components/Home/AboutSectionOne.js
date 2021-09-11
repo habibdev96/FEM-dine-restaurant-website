@@ -2,9 +2,9 @@ import styled from "styled-components";
 import aboutImageOne from "../../assets/homepage/enjoyable-place-desktop.jpg";
 import { SectionHeading } from "../styledElements/Headings";
 import Paragraph from "../styledElements/Paragraphs";
-import dividePattern from "../../assets/patterns/pattern-divide.svg";
 import bgPattern from "../../assets/patterns/pattern-curve-top-right.svg";
 import { maxWidthLg } from "../../abstracts/Mixins";
+import Divider from "../styledElements/Divider";
 
 const Section = styled.section`
   position: relative;
@@ -25,11 +25,7 @@ const Container = styled.div`
 
   .showcase {
     transform: translateY(-30rem);
-  }
-
-  .divide {
-    width: 10rem;
-    margin-bottom: 2rem;
+    box-shadow: var(--mainShadow);
   }
 `;
 
@@ -44,10 +40,8 @@ const AboutSectionOne = () => {
           className="showcase"
         />
         <div className="info">
-          <img src={dividePattern} alt="" className="divide" />
-          <SectionHeading dark>
-            Enjoyable place for all the family
-          </SectionHeading>
+          <Divider />
+          <SectionHeading>Enjoyable place for all the family</SectionHeading>
           <Paragraph>
             Our relaxed surroundings make dining with us a great experience for
             everyone. We can even arrange a tour of the farm before your meal.
