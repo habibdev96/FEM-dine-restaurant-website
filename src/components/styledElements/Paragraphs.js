@@ -12,6 +12,13 @@ const Paragraph = styled.p`
     css`
       font-size: 1.5rem;
     `}
+
+  ${({ footer }) =>
+    footer &&
+    css`
+      font-size: 1.6rem;
+      padding: 0.5rem 0;
+    `}
 `;
 
 export default Paragraph;
