@@ -3,6 +3,7 @@ import AboutSectionOne from "../components/Home/AboutSectionOne";
 import AboutSectionTwo from "../components/Home/AboutSectionTwo";
 import Highlights from "../components/Home/Highlights";
 import Features from "../components/Home/Features";
+import Cta from "../components/Home/Cta";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <AboutSectionTwo />
         <Highlights />
         <Features />
+        <Cta />
       </main>
     </>
   );
