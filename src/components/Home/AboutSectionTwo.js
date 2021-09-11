@@ -27,6 +27,7 @@ const Container = styled.div`
   position: relative;
 
   .showcase {
+    transform: translateY(10rem);
     box-shadow: var(--mainShadow);
   }
 

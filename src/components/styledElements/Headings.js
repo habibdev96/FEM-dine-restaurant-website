@@ -13,3 +13,9 @@ export const SectionHeading = styled.h2`
   color: ${({ light }) => (light ? "var(--white)" : "var(--ebonyClay)")};
   font-size: 4rem;
 `;
+
+export const HighlightHeading = styled.h3`
+  ${headingStyles}
+  color: var(--white);
+  font-size: 1.8rem;
+`;
