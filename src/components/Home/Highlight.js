@@ -9,6 +9,10 @@ const Article = styled.article`
   padding: 2rem 0;
   border-bottom: 0.1rem solid hsla(27, 22%, 51%, 0.4);
 
+  &:nth-child(3) {
+    border-bottom: none;
+  }
+
   .image {
     position: relative;
     z-index: 5;

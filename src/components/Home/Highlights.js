@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { SectionHeading } from "../styledElements/Headings";
 import Paragraph from "../styledElements/Paragraphs";
 import Divider from "../styledElements/Divider";
-import { maxWidthLg } from "../../abstracts/Mixins";
+import { maxWidthLg, sectionSpacingLg } from "../../abstracts/Mixins";
 import Highlight from "./Highlight";
 import { highlightsData } from "../../data";
 
@@ -13,7 +13,7 @@ const Section = styled.section`
 
 const Container = styled.div`
   ${maxWidthLg}
-  padding: 20rem 2rem 5rem 2rem;
+  ${sectionSpacingLg}
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--gap);

@@ -15,7 +15,7 @@ const Globals = createGlobalStyle`
     --mainRadius: 1rem;
 
     /* grid gap */
-    --gap: 5rem; 
+    --gap: 10rem; 
       
     /* shadows */
     --mainShadow: 0.1rem 1rem 1.5rem rgba(0, 0, 0, .3);

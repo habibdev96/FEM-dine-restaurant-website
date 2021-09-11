@@ -18,7 +18,7 @@ const Section = styled.section`
 
 const Container = styled.div`
   ${maxWidthLg}
-  padding: 20rem 2rem 5rem 2rem;
+  padding: 20rem 2rem 0rem 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10rem;
