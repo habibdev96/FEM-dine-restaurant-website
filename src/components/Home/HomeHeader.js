@@ -30,7 +30,7 @@ const HomeHeader = () => {
         <div>
           <img src={logo} alt="dine logo" className="logo" />
           <HeroHeading>Exquisite dining since 1989</HeroHeading>
-          <Paragraph hero>
+          <Paragraph light>
             Experience our seasonal menu in beautiful country surroundings. Eat
             the freshest produce from the comfort of our farmhouse.
           </Paragraph>

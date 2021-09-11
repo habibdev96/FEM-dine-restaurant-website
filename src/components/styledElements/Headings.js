@@ -7,3 +7,9 @@ export const HeroHeading = styled.h1`
   color: var(--white);
   font-size: 6.4rem;
 `;
+
+export const SectionHeading = styled.h2`
+  ${headingStyles}
+  color: ${({ light }) => (light ? "var(--white)" : "var(--ebonyClay)")};
+  font-size: 4rem;
+`;
