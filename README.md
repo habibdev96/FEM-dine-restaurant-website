@@ -2,6 +2,8 @@
 
 2 page website challenge for frontend mentor
 
+site: https://fem-dine-restaurant-website-challenge.netlify.app/
+
 #### Features
 - tab section
 - form validation

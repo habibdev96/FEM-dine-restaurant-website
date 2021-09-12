@@ -50,9 +50,6 @@ const Container = styled.div`
 `;
 
 const BookingHeader = () => {
-  const scrollToTop = () => window.scrollTo(0, 0);
-  scrollToTop();
-
   return (
     <Header>
       <Container>
