@@ -1,5 +1,13 @@
+import BookingHeader from "../components/Booking/BookingHeader";
+import PatternSection from "../components/Booking/PatternSection";
+
 const Booking = () => {
-  return <h1>Booking Page</h1>;
+  return (
+    <>
+      <BookingHeader />
+      <PatternSection />
+    </>
+  );
 };
 
 export default Booking;
