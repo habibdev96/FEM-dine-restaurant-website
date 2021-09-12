@@ -67,8 +67,10 @@ const AboutSectionOne = () => {
         />
         <div className="info">
           <Divider />
-          <SectionHeading>Enjoyable place for all the family</SectionHeading>
-          <Paragraph>
+          <SectionHeading data-aos="fade-up" data-aos-delay="100">
+            Enjoyable place for all the family
+          </SectionHeading>
+          <Paragraph data-aos="fade-up" data-aos-delay="200">
             Our relaxed surroundings make dining with us a great experience for
             everyone. We can even arrange a tour of the farm before your meal.
           </Paragraph>

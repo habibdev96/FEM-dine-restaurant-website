@@ -125,7 +125,7 @@ const Features = () => {
   const { image, title, description } = featuresData[value];
 
   return (
-    <Section>
+    <Section data-aos="fade-in" data-aos-delay="200">
       <img src={bgPattern} alt="" className="bg-pattern" />
       <Container>
         <img src={bgLines} alt="" className="bg-lines" />

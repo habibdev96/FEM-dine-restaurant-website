@@ -42,8 +42,10 @@ const Highlights = () => {
       <Container>
         <div>
           <Divider />
-          <SectionHeading light>A few highlights from our menu</SectionHeading>
-          <Paragraph light>
+          <SectionHeading light data-aos="fade-up" data-aos-delay="100">
+            A few highlights from our menu
+          </SectionHeading>
+          <Paragraph light data-aos="fade-up" data-aos-delay="200">
             We cater for all dietary requirements, but here’s a glimpse at some
             of our diner’s favourites. Our menu is revamped every season.
           </Paragraph>

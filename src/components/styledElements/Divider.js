@@ -7,7 +7,7 @@ const Divide = styled.img`
 `;
 
 const Divider = () => {
-  return <Divide src={dividePattern} />;
+  return <Divide src={dividePattern} data-aos="fade-up" />;
 };
 
 export default Divider;

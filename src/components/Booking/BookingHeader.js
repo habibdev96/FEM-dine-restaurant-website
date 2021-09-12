@@ -58,8 +58,8 @@ const BookingHeader = () => {
       <Container>
         <div className="info">
           <img src={logo} alt="dine logo" className="logo" />
-          <HeroHeading>Reservations</HeroHeading>
-          <Paragraph light>
+          <HeroHeading data-aos="fade-up">Reservations</HeroHeading>
+          <Paragraph light data-aos="fade-up" data-aos-delay="100">
             We can’t wait to host you. If you have any special requirements
             please feel free to call on the phone number below. We’ll be happy
             to accommodate you.

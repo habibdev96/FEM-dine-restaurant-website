@@ -55,12 +55,19 @@ const HomeHeader = () => {
       <Container>
         <div className="info">
           <img src={logo} alt="dine logo" className="logo" />
-          <HeroHeading>Exquisite dining since 1989</HeroHeading>
-          <Paragraph light>
+          <HeroHeading data-aos="fade-in">
+            Exquisite dining since 1989
+          </HeroHeading>
+          <Paragraph light data-aos="fade-in" data-aos-delay="100">
             Experience our seasonal menu in beautiful country surroundings. Eat
             the freshest produce from the comfort of our farmhouse.
           </Paragraph>
-          <Button primary={+true} to="/Booking">
+          <Button
+            primary={+true}
+            to="/Booking"
+            data-aos="fade-in"
+            data-aos-delay="200"
+          >
             Book a table
           </Button>
         </div>

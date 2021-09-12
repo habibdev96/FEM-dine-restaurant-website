@@ -58,8 +58,10 @@ const AboutSectionTwo = () => {
       <Container>
         <div className="info">
           <Divider />
-          <SectionHeading>The most locally sourced food</SectionHeading>
-          <Paragraph>
+          <SectionHeading data-aos="fade-up" data-aos-delay="100">
+            The most locally sourced food
+          </SectionHeading>
+          <Paragraph data-aos="fade-up" data-aos-delay="200">
             All our ingredients come directly from our farm or local fishery. So
             you can be sure that you’re eating the freshest, most sustainable
             food.
