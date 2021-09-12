@@ -1,6 +1,7 @@
 import { css } from "styled-components";
 
 const breakpoints = {
+  xxs: "350px",
   xs: "420px",
   sm: "500px",
   md: "768px",
