@@ -10,6 +10,7 @@ const Globals = createGlobalStyle`
     --mirage: hsl(234, 30%, 13%);
     --ebonyClay: hsl(218, 21%, 18%);
     --shuttleGray: hsl(217, 14%, 42%);
+    --error: hsl(0, 43%, 50%);
 
     /* radius */
     --mainRadius: 1rem;
