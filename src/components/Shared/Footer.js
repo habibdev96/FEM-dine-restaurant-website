@@ -2,6 +2,7 @@ import styled from "styled-components";
 import logo from "../../assets/logo.svg";
 import Paragraph from "../styledElements/Paragraphs";
 import { maxWidthLg, sectionSpacingSm } from "../../abstracts/Mixins";
+import Responsive from "../../abstracts/Responsive";
 
 const StyledFooter = styled.footer`
   background-color: var(--black);
@@ -12,9 +13,19 @@ const Container = styled.div`
   ${maxWidthLg}
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+
+  ${Responsive.md`
+    grid-template-columns: 1fr;
+    text-align: center;
+  `}
 
   .logo {
     width: 15rem;
+
+    ${Responsive.md`
+      margin: 0 auto;
+    `}
   }
 `;
 

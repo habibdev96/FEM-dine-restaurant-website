@@ -3,8 +3,9 @@ import aboutImageOne from "../../assets/homepage/enjoyable-place-desktop.jpg";
 import { SectionHeading } from "../styledElements/Headings";
 import Paragraph from "../styledElements/Paragraphs";
 import bgPattern from "../../assets/patterns/pattern-curve-top-right.svg";
-import { maxWidthLg } from "../../abstracts/Mixins";
+import { maxWidthLg, sectionSpacingSm } from "../../abstracts/Mixins";
 import Divider from "../styledElements/Divider";
+import Responsive from "../../abstracts/Responsive";
 
 const Section = styled.section`
   position: relative;
@@ -13,6 +14,11 @@ const Section = styled.section`
     position: absolute;
     width: 60%;
     top: 25%;
+
+    ${Responsive.md`
+      width: 100%;
+      top: 0;
+    `}
   }
 `;
 
@@ -21,11 +27,31 @@ const Container = styled.div`
   padding: 20rem 2rem 0rem 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10rem;
+  gap: var(--gap);
+
+  ${Responsive.md`
+    ${sectionSpacingSm}
+    grid-template-columns: 1fr;
+    text-align: center;
+  `}
+
+  .info {
+    ${Responsive.md`
+      transform: translateY(-10rem); 
+    `}
+  }
 
   .showcase {
     transform: translateY(-30rem);
     box-shadow: var(--mainShadow);
+
+    ${Responsive.xxl`
+      transform: translateY(-25rem);   
+    `}
+
+    ${Responsive.md`
+      transform: translateY(-10rem); 
+    `}
   }
 `;
 

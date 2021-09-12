@@ -5,10 +5,12 @@ import { featuresData } from "../../data";
 import {
   maxWidthLg,
   sectionSpacingLg,
+  sectionSpacingSm,
   headingStyles,
 } from "../../abstracts/Mixins";
 import bgPattern from "../../assets/patterns/pattern-curve-top-right.svg";
 import bgLines from "../../assets/patterns/pattern-lines.svg";
+import Responsive from "../../abstracts/Responsive";
 
 const Section = styled.section`
   position: relative;
@@ -18,6 +20,12 @@ const Section = styled.section`
     width: 60%;
     top: 0;
     left: -43rem;
+
+    ${Responsive.md`
+      width: 100%;
+      top: 5%;
+      left: 0;
+    `}
   }
 `;
 
@@ -34,6 +42,22 @@ const Container = styled.div`
     gap: 5rem;
     bottom: 20%;
     right: 33%;
+
+    ${Responsive.xl`
+      position: static;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 5rem;
+    `}
+
+    ${Responsive.md`
+      ${sectionSpacingSm}
+    `}
+
+    ${Responsive.sm`
+      flex-direction: column;
+      align-items: center;
+    `}
   }
 
   .bg-lines {
@@ -81,6 +105,14 @@ const Container = styled.div`
         height: 0.2rem;
         width: 10rem;
         background-color: var(--beaver);
+
+        ${Responsive.xl`
+          display: none;
+        `}
+
+        ${Responsive.sm`
+          display: block;
+        `}
       }
     }
   }

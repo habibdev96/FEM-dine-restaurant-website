@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { HighlightHeading } from "../styledElements/Headings";
 import Paragraph from "../styledElements/Paragraphs";
+import Responsive from "../../abstracts/Responsive";
 
 const Article = styled.article`
   display: flex;
@@ -8,6 +9,12 @@ const Article = styled.article`
   gap: var(--gap);
   padding: 2rem 0;
   border-bottom: 0.1rem solid hsla(27, 22%, 51%, 0.4);
+
+  ${Responsive.lg`
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  `}
 
   &:nth-child(3) {
     border-bottom: none;
@@ -32,6 +39,10 @@ const Article = styled.article`
     width: 5rem;
     color: var(--beaver);
     background-color: var(--beaver);
+
+    ${Responsive.lg`
+      display: none;
+    `}
   }
 `;
 

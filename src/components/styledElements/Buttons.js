@@ -4,6 +4,8 @@ import { headingStyles } from "../../abstracts/Mixins";
 
 const Button = styled(Link)`
   ${headingStyles}
+  position: relative;
+  z-index: 10;
   text-transform: uppercase;
   padding: 2rem 4rem;
   display: inline-block;

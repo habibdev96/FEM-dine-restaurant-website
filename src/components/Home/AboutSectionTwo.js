@@ -4,8 +4,9 @@ import bgPattern from "../../assets/patterns/pattern-curve-top-left.svg";
 import bgLines from "../../assets/patterns/pattern-lines.svg";
 import { SectionHeading } from "../styledElements/Headings";
 import Paragraph from "../styledElements/Paragraphs";
-import { maxWidthLg } from "../../abstracts/Mixins";
+import { maxWidthLg, sectionSpacingSm } from "../../abstracts/Mixins";
 import Divider from "../styledElements/Divider";
+import Responsive from "../../abstracts/Responsive";
 
 const Section = styled.section`
   position: relative;
@@ -20,15 +21,26 @@ const Section = styled.section`
 
 const Container = styled.div`
   ${maxWidthLg}
+  padding: 0 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: var(--gap);
   position: relative;
 
+  ${Responsive.md`
+    ${sectionSpacingSm}
+    grid-template-columns: 1fr;
+    text-align: center;
+  `}
+
   .showcase {
     transform: translateY(10rem);
     box-shadow: var(--mainShadow);
+
+    ${Responsive.md`
+      transform: translateY(0);
+    `}
   }
 
   .bg-lines {

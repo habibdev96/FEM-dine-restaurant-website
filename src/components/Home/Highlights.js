@@ -3,9 +3,14 @@ import styled from "styled-components";
 import { SectionHeading } from "../styledElements/Headings";
 import Paragraph from "../styledElements/Paragraphs";
 import Divider from "../styledElements/Divider";
-import { maxWidthLg, sectionSpacingLg } from "../../abstracts/Mixins";
+import {
+  maxWidthLg,
+  sectionSpacingLg,
+  sectionSpacingSm,
+} from "../../abstracts/Mixins";
 import Highlight from "./Highlight";
 import { highlightsData } from "../../data";
+import Responsive from "../../abstracts/Responsive";
 
 const Section = styled.section`
   background-color: var(--black);
@@ -17,6 +22,16 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--gap);
+
+  ${Responsive.lg`
+    align-items: center;
+  `}
+
+  ${Responsive.md`
+    ${sectionSpacingSm}
+    grid-template-columns: 1fr;
+    text-align: center;
+  `}
 `;
 
 const Highlights = () => {
