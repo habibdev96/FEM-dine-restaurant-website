@@ -4,6 +4,8 @@ import Paragraph from "../styledElements/Paragraphs";
 import logo from "../../assets/logo.svg";
 import BookingShowcase from "../../assets/booking/hero-bg-desktop.jpg";
 import { maxWidthLg, sectionSpacingSm } from "../../abstracts/Mixins";
+import bgLines from "../../assets/patterns/pattern-lines.svg";
+import Form from "./Form";
 
 const Header = styled.header`
   background: url(${BookingShowcase}) center center/cover no-repeat;
@@ -20,6 +22,13 @@ const Container = styled.div`
     width: 15rem;
     margin-bottom: 15rem;
   }
+
+  .bg-lines {
+    position: absolute;
+    width: 20rem;
+    top: 98%;
+    left: 48%;
+  }
 `;
 
 const BookingHeader = () => {
@@ -35,6 +44,8 @@ const BookingHeader = () => {
             to accommodate you.
           </Paragraph>
         </div>
+        <Form />
+        <img src={bgLines} alt="" className="bg-lines" />
       </Container>
     </Header>
   );
