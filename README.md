@@ -6,6 +6,7 @@
 - tab section
 - form validation
 - responsive design
+- animated content on scroll
 
 #### Technologies used
 - react
@@ -14,4 +15,5 @@
 #### Libraries
 - react-router-dom
 - react-hook-form
+- aos.js
 
