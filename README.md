@@ -19,3 +19,6 @@ site: https://fem-dine-restaurant-website-challenge.netlify.app/
 - react-hook-form
 - aos.js
 
+#### State Management
+- context api
+
