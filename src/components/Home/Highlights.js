@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styled from "styled-components";
 import { SectionHeading } from "../styledElements/Headings";
 import Paragraph from "../styledElements/Paragraphs";
@@ -9,8 +8,8 @@ import {
   sectionSpacingSm,
 } from "../../abstracts/Mixins";
 import Highlight from "./Highlight";
-import { highlightsData } from "../../data";
 import Responsive from "../../abstracts/Responsive";
+import { useGlobalContext } from "../../context";
 
 const Section = styled.section`
   background-color: var(--black);
@@ -35,7 +34,7 @@ const Container = styled.div`
 `;
 
 const Highlights = () => {
-  const [highlights, setHighlights] = useState(highlightsData);
+  const { highlights } = useGlobalContext();
 
   return (
     <Section>

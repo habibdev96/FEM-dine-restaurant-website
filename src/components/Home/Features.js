@@ -1,7 +1,5 @@
-import { useState } from "react";
 import styled from "styled-components";
 import Feature from "./Feature";
-import { featuresData } from "../../data";
 import {
   maxWidthLg,
   sectionSpacingLg,
@@ -11,6 +9,7 @@ import {
 import bgPattern from "../../assets/patterns/pattern-curve-top-right.svg";
 import bgLines from "../../assets/patterns/pattern-lines.svg";
 import Responsive from "../../abstracts/Responsive";
+import { useGlobalContext } from "../../context";
 
 const Section = styled.section`
   position: relative;
@@ -119,10 +118,8 @@ const Container = styled.div`
 `;
 
 const Features = () => {
-  const [features, setFeatures] = useState(featuresData);
-  const [value, setValue] = useState(0);
-
-  const { image, title, description } = featuresData[value];
+  const { features, value, setValue } = useGlobalContext();
+  const { image, title, description } = features[value];
 
   return (
     <Section data-aos="fade-in" data-aos-delay="200">

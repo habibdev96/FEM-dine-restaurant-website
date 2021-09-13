@@ -10,7 +10,7 @@ import Responsive from "../../abstracts/Responsive";
 
 const Section = styled.section`
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 
   .bg-pattern {
     position: absolute;

@@ -1,8 +1,9 @@
 import BookingHeader from "../components/Booking/BookingHeader";
 import PatternSection from "../components/Booking/PatternSection";
+import { useGlobalContext } from "../context";
 
 const Booking = () => {
-  const scrollToTop = () => window.scrollTo(0, 0);
+  const { scrollToTop } = useGlobalContext();
   scrollToTop();
 
   return (

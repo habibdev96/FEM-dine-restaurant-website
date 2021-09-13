@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { headingStyles } from "../../abstracts/Mixins";
 import Responsive from "../../abstracts/Responsive";
-import { useForm } from "react-hook-form";
+import { useGlobalContext } from "../../context";
 
 const StyledForm = styled.form`
   padding: 5rem;
@@ -106,12 +106,7 @@ const StyledForm = styled.form`
 `;
 
 const Form = () => {
-  const {
-    handleSubmit,
-    register,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (values) => console.log(values);
+  const { handleSubmit, register, errors, onSubmit } = useGlobalContext();
 
   return (
     <StyledForm onSubmit={handleSubmit(onSubmit)}>

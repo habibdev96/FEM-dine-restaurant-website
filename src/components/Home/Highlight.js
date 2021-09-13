@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { HighlightHeading } from "../styledElements/Headings";
 import Paragraph from "../styledElements/Paragraphs";
 import Responsive from "../../abstracts/Responsive";
+import { useGlobalContext } from "../../context";
 
 const Article = styled.article`
   display: flex;
